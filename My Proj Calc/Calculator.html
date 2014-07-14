@@ -1,0 +1,91 @@
+<html>
+<head>
+
+<script type="text/javascript" src="Calc_logic.js"></script>
+<title>Calculator by Prathamesh Potnis</title>
+<style>
+
+
+.button
+{
+	font-weight: bold;
+	font-size:25px;
+	width:75px;
+	height:50px;
+	background-color: #808080;
+		
+}
+
+.equals
+{
+	background: white;
+	font-size: 20px;
+	font-weight: light;
+	background-color:transparent;
+	width:300px;	
+	height: 50px;
+	text-align: right;
+}
+p
+{
+	font-size: 25px;
+	font-family: Times New Roman, Georgia,Serif;
+	font-weight: bold;
+	
+}
+</style>
+
+</head>
+
+<body>
+
+<p align="center">Calculator <br /><br />
+<form id="calc" name="calc">
+
+<table border="1" align="center">
+<tr>
+<td colspan="5" align="center">
+  <input type="text" name="memory" readonly="readonly" class="equals" />
+</td></tr>
+<tr>
+<td colspan="5" align="center">
+  <input type="text" name="result" readonly="readonly" class="equals"/>
+</td>
+</tr>
+
+    <tr>
+    <td> <button class ="button" type="button" id="nine"   onclick="show(9)">9</button></td>
+    <td> <button class ="button" type="button" id="eight"  onclick="show(8)">8</button></td>
+    <td> <button class ="button" type="button" id="seven"  onclick="show(7)">7</button></td> 
+    <td> <button class ="button" type="button" id="div"    onclick="operation('/')">/</button></td>
+    <td> <button class ="button" type="button" id="clear"  onclick="calc.result.value =' '">C</button></td>	    
+   </tr>
+   
+    <tr>
+    <td> <button class ="button" type="button" id="six"   onclick="show(6)">6</button></td>
+    <td> <button class ="button" type="button" id="five"  onclick="show(5)">5</button></td>
+    <td> <button class ="button" type="button" id="four"  onclick="show(4)">4</button></td>
+    <td> <button class ="button" type="button" id="mul"   onclick="operation('*')">*</button></td>
+    <td> <button class ="button" type="button" id="equals" onclick="cal()">=</button></td>
+    </tr>
+    
+    <tr>
+    <td> <button class ="button" type="button" id="three" onclick="show(3)">3</button></td>
+    <td> <button class ="button" type="button" id="two"   onclick="show(2)">2</button></td>
+    <td> <button class ="button" type="button" id="one"   onclick="show(1)">1</button></td>
+    <td> <button class ="button" type="button" id="minus" onclick="operation('-')">-</button></td>
+    </tr>
+         
+    <tr>
+    <td> <button class ="button" type="button" id="dcml"   onclick="show('.')">.</button></td>
+    <td> <button class ="button" type="button" id="zero"   onclick="show(0)">0</button></td>
+    <td> <button class ="button" type="button" id="del"    onclick="deln()"> DEL</button></td>
+    <td> <button class ="button" type="button" id="plus"   onclick="operation('+')">+</button></td>
+    </tr>    
+       
+            </p>
+            </table>
+</form>
+</body>
+</html>
+
